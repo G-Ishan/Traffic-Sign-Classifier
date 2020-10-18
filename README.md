@@ -17,8 +17,8 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/training-visualization.png "Visualization"
 [image2]: ./examples/no-entry-orig.png "Original Sign"
-[image3]: ./examples/no-entry-processed.jpg "Grayscale Sign"
-[image4]: ./examples/online-signspng "Online Signs"
+[image3]: ./examples/no-entry-processed.png "Grayscale Sign"
+[image4]: ./examples/online-signs.png "Online Signs"
 [image5]: ./examples/softmax-visualization.png "Softmax"
 
 ## Rubric Points
