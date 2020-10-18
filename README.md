@@ -5,7 +5,7 @@
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
+* Load the data set (see link in writeup below)
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -30,6 +30,8 @@ The goals / steps of this project are the following:
 #### This writeup includes all the rubric points and how I addressed each one.
 
 Here is a link to my [project code](https://github.com/G-Ishan/Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb) for reference
+
+You can download the data set [here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip)
 
 ### Data Set Summary & Exploration
 
