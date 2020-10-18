@@ -18,12 +18,8 @@ The goals / steps of this project are the following:
 [image1]: ./examples/training-visualization.png "Visualization"
 [image2]: ./examples/no-entry-orig.png "Original Sign"
 [image3]: ./examples/no-entry-processed.jpg "Grayscale Sign"
-[image4]: ./online-images/priority-road.png "Priority Road"
-[image5]: ./online-images/yield.jpg "Yield"
-[image6]: ./online-images/no-entry.png "No Entry"
-[image7]: ./online-images/ahead-only.png "Ahead Only"
-[image8]: ./online-images/caution.png "General Caution"
-[image9]: ./examples/softmax-visualization.png "Softmax"
+[image4]: ./examples/online-signspng "Online Signs"
+[image5]: ./examples/softmax-visualization.png "Softmax"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -62,8 +58,7 @@ As a first step, I decided to convert the images to grayscale because even thoug
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
-![alt_text][image3]
+![alt text][image2] ![alt_text][image3]
 
 I also normalized the image data in order to get the mean to be close to zero. This was the only two preprocessing steps I did for the images.
 
@@ -122,8 +117,7 @@ Givent the high accuracies across all the data sets, it is shown that the model 
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image4]
 
 I made sure to resize these images to the same size as the original data set of (32, 32, 3). I then preprocessed (grayscale and normalize) these images before running them through the LeNet pipeline. 
 
@@ -147,7 +141,7 @@ The model was able to correctly guess 2 of the 5 traffic signs, which gives an a
 To understand where the model is struggling, I plotted the top 5 softmax probabilities for each sign seen in the image below. Here, we can see in the 3 incorrect signs, the model is really sure that they are all 80 km/h speed limit signs, with other speed limit signs as the next best probabilities. The no entry sign at least has a probability of .05 for no entry but the ahead only and general caution do not even have a correct probability in the top 5. I am not sure why the model has such a bias for speed limit signs. 
 
 
-![alt text][image9]
+![alt text][image5]
 
 
 
